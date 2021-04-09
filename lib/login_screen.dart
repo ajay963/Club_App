@@ -10,7 +10,6 @@ const users = const {
 };
 
 class LoginScreen extends StatelessWidget {
-
   Duration get loginTime => Duration(milliseconds: 2250);
 
   Future<String> _authUser(LoginData data) {
@@ -40,7 +39,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return FlutterLogin(
       title: 'HnCC',
-    //  logo: 'assets/hncc-logo.png',
+      //  logo: 'assets/hncc-logo.png',
       onLogin: (_) => Future(null),
       onSignup: (_) => Future(null),
       loginProviders: <LoginProvider>[
